@@ -134,7 +134,7 @@ Blend SrcAlpha OneMinusSrcAlpha
 			colorHSV.y *= _Saturation;  //调整饱和度
 			colorHSV.z *= _Value;
 			c.xyz = HSVConvertToRGB(colorHSV.xyz);   //将调整后的HSV，转换为RGB颜色
-			c.a = _Alpha;// *c.a;
+			c.a *= _Alpha;// *c.a;
 			return c;
 		}
 			ENDCG
@@ -263,7 +263,7 @@ Blend SrcAlpha OneMinusSrcAlpha
 				colorHSV.y *= _Saturation;  //调整饱和度
 				colorHSV.z *= _Value;
 				c.xyz = HSVConvertToRGB(colorHSV.xyz);   //将调整后的HSV，转换为RGB颜色
-				c.a = _Alpha;// *c.a;
+				c.a *= _Alpha;// *c.a;
 				return c;
 			}
 				ENDCG
