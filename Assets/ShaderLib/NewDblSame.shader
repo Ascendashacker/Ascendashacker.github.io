@@ -3,6 +3,7 @@
 Shader "Custom/NewDblSame" {
 	Properties{
 		_Diffuse("Diffuse", 2D) = "white" {}
+		_Offset("Offset",Range(-10,10)) = 0
 		_DiffuseContrast("DiffuseContrast", Range(-10, 10)) = 0
 		_Diffuse_color("Diffuse_color", Color) = (1,1,1,1)
 		_Diffuse_Brightness("Diffuse_Brightness", Range(0.01, 5)) = 1
@@ -37,7 +38,7 @@ Shader "Custom/NewDblSame" {
 				float _Diffuse_Rotator;
 				fixed _DiffuseFlipVertical;
 				fixed _DiffuseFlipHorizontal;
-
+				float _Offset;
 				struct VertextInput {
 					float4 vertex :POSITION; //顶点位置
 					float3 normal :NORMAL;  //法线向量坐标
@@ -52,6 +53,7 @@ Shader "Custom/NewDblSame" {
 					VertexOutput output;
 					//output.position = UnityObjectToClipPos(input.vertext);
 					output.position =UnityObjectToClipPos(input.vertex); //转到裁剪空间
+					//output.position.y += _Offset;
 					//output.normal = mul(float4(input.normal,0),unity_WorldToObject).xyz;
 					output.normal = UnityObjectToWorldNormal(input.normal);
 					output.texcoord0 = input.texcoord0;
@@ -65,6 +67,7 @@ Shader "Custom/NewDblSame" {
 				{
 					fixed4 diffusevar = tex2D(_Diffuse,TRANSFORM_TEX(input.texcoord0,_Diffuse));
 					diffusevar *= _Diffuse_color;
+					
 					//对比度算法1：
 					/*float3 avgColor = float3(0.5,0.5,0.5);
 					fixed3 finalColor = lerp(avgColor,diffusevar, _DiffuseContrast) *_Diffuse_Brightness;*/
