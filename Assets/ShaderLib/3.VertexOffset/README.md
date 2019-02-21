@@ -1,7 +1,8 @@
 # 顶点偏移
 ### 效果展示
 ![vertexOffset.gif](https://i.loli.net/2019/02/20/5c6d577c1fa37.gif)
-
+### 项目需要对贴图指定部位进行偏移
+![vertexOffset1.gif](https://i.loli.net/2019/02/21/5c6e119dc459d.gif)
 
 
 ### 代码实现
