@@ -7,7 +7,7 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: VertexOffset 1
-  m_Shader: {fileID: 4800000, guid: 7b76ac1a22fe026429221c2d18447ef1, type: 3}
+  m_Shader: {fileID: 4800000, guid: e111fdc2d3b5f5c49b72b3ad1462d096, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -39,7 +39,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 0dfbe23bc1c78da4a904238471ba557a, type: 3}
+        m_Texture: {fileID: 2800000, guid: 9601e09f3d903c7478f5062e68b97ba2, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -55,15 +55,17 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Texture:
-        m_Texture: {fileID: 2800000, guid: 7d9dc92ca2a5a444ca54ead3489c73da, type: 3}
+        m_Texture: {fileID: 2800000, guid: 7e8847dc23adc7f4c9371ed80de31803, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _BumpScale: 1
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
+    - _DetailScale: 0.5
     - _DstBlend: 0
     - _Glossiness: 0.5
+    - _HeightScale: 0.01
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
@@ -76,3 +78,5 @@ Material:
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _Offset: {r: 1024, g: 299.9, b: 0, a: 0}
+    - _Size: {r: 1024, g: 1024, b: 0, a: 0}

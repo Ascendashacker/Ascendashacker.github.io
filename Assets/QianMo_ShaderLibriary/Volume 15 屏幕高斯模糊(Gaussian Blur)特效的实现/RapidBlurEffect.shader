@@ -130,7 +130,7 @@ Shader "Learning Unity Shader/Lecture 15/RapidBlurEffect"
 		//将三维空间中的坐标投影到二维窗口  
 		o.pos = UnityObjectToClipPos(v.vertex);
 		//对图像的降采样：取像素上下左右周围的点，分别存于四级纹理坐标中
-		o.uv20 = v.texcoord + _MainTex_TexelSize.xy* half2(0.5h, 0.5h);;
+		o.uv20 = v.texcoord + _MainTex_TexelSize.xy * half2(0.5h, 0.5h);;
 		o.uv21 = v.texcoord + _MainTex_TexelSize.xy * half2(-0.5h, -0.5h);
 		o.uv22 = v.texcoord + _MainTex_TexelSize.xy * half2(0.5h, -0.5h);
 		o.uv23 = v.texcoord + _MainTex_TexelSize.xy * half2(-0.5h, 0.5h);

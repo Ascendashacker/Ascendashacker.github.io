@@ -32,7 +32,7 @@ HSV模型的三维表示从RGB立方体演化而来。设想从RGB沿立方体�
 ![HSV3.gif](https://i.loli.net/2019/02/18/5c6a533087597.gif)
 
 #### 透明度（Alpha）调节
-![HSV4.gif](https://i.loli.net/2019/02/18/5c6a53c49dde2.gif)
+![hsv5.gif](https://i.loli.net/2019/02/20/5c6ccd8db528c.gif)
 
 ### 代码实现
 ```
